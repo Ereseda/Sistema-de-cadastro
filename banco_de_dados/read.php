@@ -11,8 +11,9 @@
 
         echo "<tr>";
 
-        echo "<td>$nome</td><td>$email</td><td>$telefone</td><td><a href='banco_de_dados/update.php?id=$id'><i class='material-icons'>edit</i></td><td><a href='banco_de_dados/delete.php?id=$id'><i class='material-icons'>delete</i></td>";
-
+        echo "<td>$nome</td><td>$email</td><td>$telefone</td>";
+        echo "<td><a href='editar.php?id=$id'><i class='material-icons'>edit</i></a></td>";
+        echo "<td><a href='banco_de_dados/delete.php?id=$id'><i class='material-icons'>delete</i></a></td>";
         echo "</tr>";
 
     endwhile;
